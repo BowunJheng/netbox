@@ -92,6 +92,62 @@ filters:
   url: https://www.malwaredomainlist.com/hostslist/hosts.txt
   name: MalwareDomainList.com Hosts List
   id: 4
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/2.txt
+  name: Base filter
+  id: 5
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/3.txt
+  name: Tracking Protection filter
+  id: 6
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/4.txt
+  name: Social media filter
+  id: 7
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/14.txt
+  name: Annoyances filter
+  id: 8
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/10.txt
+  name: Filter unblocking search ads and self-promotions
+  id: 9
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/5.txt
+  name: Experimental filter
+  id: 10
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/11.txt
+  name: Mobile ads filter
+  id: 11
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/12.txt
+  name: Safari filter
+  id: 12
+- enabled: true
+  url: https://filters.adtidy.org/extension/chromium/filters/15.txt
+  name: Simplified domain names filter
+  id: 13
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+  name: china01
+  id: 14
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
+  name: china02
+  id: 15
+- enabled: true
+  url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+  name: china03
+  id: 16
+- enabled: true
+  url: http://tools.yiclear.com/ChinaList2.0.txt
+  name: china04
+  id: 17
+- enabled: true
+  url: https://www.i-dont-care-about-cookies.eu/abp/
+  name: china05
+  id: 18
 user_rules: []
 dhcp:
   enabled: false

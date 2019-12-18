@@ -4,6 +4,7 @@ support_service=( pihole/pihole:latest adguard/adguardhome:latest )
 support_func="start|stop|restart|update|status"
 service_array=()
 adguardconf="AdGuardHome_v0.100.2.yaml"
+piholeconf="adlists_20191218.list"
 
 list() {
 	counter=1
@@ -106,6 +107,8 @@ update() {
 	echo "update [${1}]"
 	case ${1} in
 		"pihole/pihole:latest")
+      rm $(pwd)/etc-pihole/adlists.list
+      cp $(pwd)/${piholeconf} $(pwd)/etc-pihole/adlists.list
 			status ${1}
 			if [ $? -eq 1 ];
 			then
